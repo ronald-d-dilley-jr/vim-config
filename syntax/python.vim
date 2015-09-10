@@ -49,7 +49,7 @@ syn keyword pythonRepeat	for while
 syn keyword pythonConditional	if elif else
 syn keyword pythonOperator	and in is not or
 " AS will be a keyword in Python 3
-syn keyword pythonPreCondit	import from as logger
+syn keyword pythonPreCondit	import from as log logger
 syn match   pythonComment	"#.*$" contains=pythonTodo,@Spell
 syn keyword pythonTodo		TODO FIXME XXX contained
 
