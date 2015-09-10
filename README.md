@@ -7,11 +7,12 @@ This holds my vim/gvim configuration.
 ```
 git clone <repo> ~/.vim
 ```
-* link ```.vimrc``` and ```.gvimrc``` to the ```~/.vim``` versions
+* Link resource files to the configured versions
 ```
 cd ~
 ln -s .vim/vimrc .vimrc
 ln -s .vim/gvimrc .gvimrc
+ln -s .vim/pylintrc .pylintrc
 ```
 * Update/Install the submodule plugins
 ```
