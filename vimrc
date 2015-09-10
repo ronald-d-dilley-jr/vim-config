@@ -29,3 +29,6 @@ au BufNewFile,BufRead  *.bash_*  set filetype=sh
 colorscheme desert
 set dir=/var/tmp
 
+:hi OverLength ctermbg=red ctermfg=white
+match OverLength /\%78v.\+/
+

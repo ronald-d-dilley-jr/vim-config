@@ -17,7 +17,7 @@ set listchars=tab:>.,trail:.,nbsp:.
 set cursorline
 
 set lines=50
-set columns=80
+set columns=82
 
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
@@ -38,3 +38,6 @@ nmap <F4> ggVGJ
 :nnoremap <Leader>cc :set cursorcolumn!<CR>
 
 :hi SpecialKey guifg=#ff0000 guibg=#ffbbbb
+
+:hi OverLength ctermbg=red ctermfg=white guibg=#000000 guifg=#FF0000
+match OverLength /\%78v.\+/
