@@ -30,5 +30,5 @@ colorscheme desert
 set dir=/var/tmp
 
 :hi OverLength ctermbg=red ctermfg=white
-match OverLength /\%78v.\+/
+match OverLength /\%79v.\+/
 

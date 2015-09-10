@@ -40,4 +40,4 @@ nmap <F4> ggVGJ
 :hi SpecialKey guifg=#ff0000 guibg=#ffbbbb
 
 :hi OverLength ctermbg=red ctermfg=white guibg=#000000 guifg=#FF0000
-match OverLength /\%78v.\+/
+match OverLength /\%79v.\+/
