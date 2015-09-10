@@ -1,3 +1,5 @@
+execute pathogen#infect()
+
 :hi Comment cterm=bold
 set shiftwidth=4
 set noic
