@@ -32,3 +32,5 @@ set dir=/var/tmp
 :hi OverLength ctermbg=red ctermfg=white
 match OverLength /\%79v.\+/
 
+let g:syntastic_python_checkers=['pep8', 'python', 'pylint']
+
