@@ -32,5 +32,12 @@ set dir=/var/tmp
 :hi OverLength ctermbg=red ctermfg=white
 match OverLength /\%79v.\+/
 
-let g:syntastic_python_checkers=['pep8', 'python', 'pylint']
+" Configure syntastic
+let g:syntastic_python_checkers = ['pep8', 'python', 'pylint']
+let g:syntastic_error_symbol = 'X'
+let g:syntastic_warning_symbol = '!'
+
+" Only check when requested using F5 key
+let g:syntastic_mode_map = { 'mode': 'passive' }
+nmap <F5> :SyntasticCheck<CR>
 
