@@ -21,4 +21,4 @@ git submodule update --init
 ```
 
 ## Usage
-* <F5> Will kickoff syntastic to check your syntax.
+* &lt;F5&gt; Will kickoff syntastic to check your syntax.
