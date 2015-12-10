@@ -40,4 +40,16 @@ nmap <F4> ggVGJ
 :hi SpecialKey guifg=#ff0000 guibg=#ffbbbb
 
 :hi OverLength ctermbg=red ctermfg=white guibg=#000000 guifg=#FF0000
-match OverLength /\%79v.\+/
+let s:activatedh = 0 
+function! ToggleH()
+    if s:activatedh == 0
+        let s:activatedh = 1 
+        match OverLength /\%79v.\+/
+    else
+        let s:activatedh = 0 
+        match none
+    endif
+endfunction
+
+nnoremap <F6> :call ToggleH()<CR>
+:call ToggleH()
