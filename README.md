@@ -19,3 +19,6 @@ ln -s .vim/pylintrc .pylintrc
 cd ~/.vim
 git submodule update --init
 ```
+
+## Usage
+* &lt;F5&gt; Will kickoff syntastic to check your syntax.
