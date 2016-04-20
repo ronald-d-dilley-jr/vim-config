@@ -4,7 +4,7 @@ set noic
 set noai
 set hls
 set wrap
-set guifont=Monospace\ Bold\ 9
+set guifont=Courier\ Primal\ 11
 "set guifont=Courier\ 10\ Pitch\ Bold\ 7
 "set guifont=Bitstream\ Vera\ Sans\ Mono\ Bold\ 7
 set background=dark
@@ -53,3 +53,4 @@ endfunction
 
 nnoremap <F6> :call ToggleH()<CR>
 :call ToggleH()
+
