@@ -5,6 +5,7 @@ set noai
 set hls
 set wrap
 set guifont=Courier\ Primal\ 11
+"set guifont=Monospace\ Bold\ 12
 "set guifont=Courier\ 10\ Pitch\ Bold\ 7
 "set guifont=Bitstream\ Vera\ Sans\ Mono\ Bold\ 7
 set background=dark
@@ -26,6 +27,7 @@ let python_highlight_all = 1
 au BufNewFile,BufRead  *.odl,*.omf  setf msidl
 au BufNewFile,BufRead  *.bash-*  set filetype=sh
 au BufNewFile,BufRead  crontab.cron  set filetype=crontab
+"au BufNewFile,BufRead  *.py  set filetype=python
 colorscheme desert
 set dir=/var/tmp
 
@@ -53,4 +55,3 @@ endfunction
 
 nnoremap <F6> :call ToggleH()<CR>
 :call ToggleH()
-

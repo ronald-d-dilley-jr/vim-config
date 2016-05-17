@@ -6,7 +6,8 @@ set noic
 set noai
 set hls
 set wrap
-set guifont=Monospace\ Bold\ 8
+set guifont=Courier\ Primal\ 11
+"set guifont=Monospace\ Bold\ 12
 "set guifont=Courier\ 10\ Pitch\ Bold\ 7
 "set guifont=Bitstream\ Vera\ Sans\ Mono\ Bold\ 7
 set background=dark
@@ -25,7 +26,9 @@ autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 let python_highlight_all = 1
 
 au BufNewFile,BufRead  *.odl,*.omf  setf msidl
-au BufNewFile,BufRead  *.bash_*  set filetype=sh
+au BufNewFile,BufRead  *.bash-*  set filetype=sh
+au BufNewFile,BufRead  crontab.cron  set filetype=crontab
+"au BufNewFile,BufRead  *.py  set filetype=python
 colorscheme desert
 set dir=/var/tmp
 
@@ -40,4 +43,3 @@ let g:syntastic_warning_symbol = '!'
 " Only check when requested using F5 key
 let g:syntastic_mode_map = { 'mode': 'passive' }
 nmap <F5> :SyntasticCheck<CR>
-
