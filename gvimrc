@@ -11,6 +11,7 @@ set guifont=Courier\ Primal\ 11
 set background=dark
 set mousehide
 set guioptions=aegimrLt
+set mousemodel=popup
 
 set list
 set listchars=tab:>.,trail:.,nbsp:.
