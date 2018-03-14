@@ -29,14 +29,15 @@ au BufNewFile,BufRead  *.odl,*.omf  setf msidl
 au BufNewFile,BufRead  *.bash-*  set filetype=sh
 au BufNewFile,BufRead  crontab.cron  set filetype=crontab
 "au BufNewFile,BufRead  *.py  set filetype=python
-colorscheme desert
+colorscheme dilley
 set dir=/var/tmp
 
 :hi OverLength ctermbg=red ctermfg=white
 match OverLength /\%79v.\+/
 
 " Configure syntastic
-let g:syntastic_python_checkers = ['pep8', 'python', 'pylint']
+"let g:syntastic_python_checkers = ['python', 'pylint', 'pep8']
+let g:syntastic_python_checkers = ['prospector']
 let g:syntastic_error_symbol = 'X'
 let g:syntastic_warning_symbol = '!'
 
